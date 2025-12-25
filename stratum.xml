@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <project path="build/make" name="platform_build" remote="stratum" groups="pdk" >
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
+
+    <project path="build/soong" name="platform_build_soong" remote="stratum" groups="pdk,tradefed" >
+        <linkfile src="root.bp" dest="Android.bp" />
+        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    </project>
+
+    <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" groups="qcom" remote="stratum" revision="lineage-21.0" />
+    <project path="packages/apps/tequilaSettings" name="platform_packages_apps_tequilaSettings" remote="stratum" />
+    <project path="frameworks/av" name="platform_frameworks_av" remote="stratum" groups="pdk" />
+    <project path="frameworks/base" name="platform_frameworks_base" remote="stratum" groups="pdk-cw-fs,pdk-fs" />
+    <project path="tequila_ota" name="tequila_ota" remote="stratum" revision="main" />
+    <project path="vendor/google/gms" name="platform_vendor_google_gms" remote="stratum-gitlab" />
+    <project path="vendor/google/pixel" name="platform_vendor_google_pixel" remote="stratum-gitlab" />
+    <project path="vendor/support" name="platform_vendor_support" remote="stratum" />
+    <project path="vendor/tequila" name="platform_vendor_tequila" remote="stratum" />
+    <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="stratum" />
+    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="stratum" groups="pdk-fs" />
+    <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom,waipio-vendor" remote="stratum" revision="lineage-21.0-caf"/>
+    <project path="vendor/qcom/opensource/core-utils-vendor" name="android_vendor_qcom_opensource_core-utils-vendor" remote="stratum" revision="lineage-21.0" />
+    <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="stratum" groups="pdk-fs" />
+    <project path="packages/apps/tequilaPapers" name="platform_packages_apps_tequilaPapers" remote="stratum" />
+</manifest>
+
+
+
